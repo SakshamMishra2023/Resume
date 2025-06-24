@@ -19,8 +19,8 @@
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
 \usepackage[
-    pdftitle={John Doe's CV},
-    pdfauthor={John Doe},
+    pdftitle={Saksham Mishra's CV},
+    pdfauthor={Saksham Mishra},
     pdfcreator={LaTeX with RenderCV},
     colorlinks=true,
     urlcolor=primaryColor
@@ -56,7 +56,7 @@
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small John Doe - Page \thepage{} of \pageref*{LastPage}}
+    \color{gray}\textit{\small Saksham Mishra - Page \thepage{} of \pageref*{LastPage}}
 }{}{} % replace number by desired string
 \makeatother
 \pagestyle{customFooterStyle}
@@ -133,7 +133,7 @@
         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+        \small\color{gray}\textit{Last updated in June 2025}\hspace{\widthof{Last updated in June 2025}}
     }}}%
   }%
 }%
@@ -160,72 +160,25 @@
         \vspace{0.3 cm}
 
         \normalsize
-        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Your Location}%
+        \mbox{\hrefWithoutArrow{mailto:saksham2684@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}saksham2684@gmail.com}}%
         \kern 0.25 cm%
         \AND%
         \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{mailto:youremail@yourdomain.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}youremail@yourdomain.com}}%
+        \mbox{\hrefWithoutArrow{tel:+91-828-775-87-67}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}0828 775 87 67}}%
         \kern 0.25 cm%
         \AND%
         \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{tel:+90-541-999-99-99}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}0541 999 99 99}}%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/saksham-m-1a2337290}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}LinkedIn}}%
         \kern 0.25 cm%
         \AND%
         \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}yourwebsite.com}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/yourusername}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}yourusername}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://github.com/yourusername}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}yourusername}}%
+        \mbox{\hrefWithoutArrow{https://github.com/SakshamMishra2023}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}GitHub}}%
     \end{header}
 
     \vspace{0.3 cm - 0.3 cm}
 
-
-    \section{Welcome to RenderCV!}
-
-
-
-        
-        \begin{onecolentry}
-            \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-        \end{onecolentry}
-
-
-    
-    \section{Quick Guide}
-
-    \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-
-
-        \item Each section title is arbitrary and each section contains a list of entries.
-
-        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-
-        \item Select a section title, pick an entry type, and start writing your section!
-
-        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-
-
-        \end{highlightsforbulletentries}
-    \end{onecolentry}
-
     \section{Education}
 
-
-
-        
         \begin{twocolentry}{
             
             
@@ -238,164 +191,205 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item GPA: 6.95/10 (\href{https://example.com}{a link to somewhere})
-                \item \textbf{Coursework:} Computer Organization, Linear Algebra, Advanced Programming, Embedded Logic Design
+                \item \textbf{Coursework:} Computer Organization, Linear Algebra, Advanced Programming, Embedded Logic Design, Data Structures and Algorithms
             \end{highlights}
         \end{onecolentry}
-
-
-
-    
-    \section{Experience}
-
-
-
-        
-        \begin{twocolentry}{
-        \textit{Cupertino, CA}    
-            
-        \textit{June 2005 – Aug 2007}}
-            \textbf{Software Engineer}
-            
-            \textit{Apple}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-                \item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-                \item Redesigned chat file format and implemented backward compatibility for search
-            \end{highlights}
-        \end{onecolentry}
-
 
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
-        \textit{Redmond, WA}    
+
+
             
-        \textit{June 2003 – Aug 2003}}
-            \textbf{Software Engineer Intern}
-            
-            \textit{Microsoft}
+        \textit{2020 – 2022}}
+            \textbf{Dhruva Public School, Delhi}
+
+            \textit{Class-XII, PCM (92.2\% CBSE)}
         \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-                \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-                \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-                \item Created a test case generation tool that creates random XML docs from XML Schema
-                \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Publications}
-
-
-
-        
-        \begin{samepage}
-            \begin{twocolentry}{
-                Jan 2004
-            }
-                \textbf{3D Finite Element Analysis of No-Insulation Coils}
-
-                \vspace{0.10 cm}
-
-                \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
-            \end{twocolentry}
-
-
-            \vspace{0.10 cm}
-
-            \begin{onecolentry}
-        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
-            \end{onecolentry}
-        \end{samepage}
-
-
-    
-    \section{Projects}
-
-
-
-        
-        \begin{twocolentry}{
-            
-            
-        \textit{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}}
-            \textbf{Multi-User Drawing Tool}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
-        \end{onecolentry}
-
 
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
+
+
             
-            
-        \textit{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}}
-            \textbf{Synchronized Desktop Calendar}
+        \textit{2013 – 2020}}
+            \textbf{Greenwood Public School, Gurugram}
+
+            \textit{Class-X, (90.2\% CBSE)}
         \end{twocolentry}
 
         \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{onecolentry}
+        
 
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            
-            
-        \textit{2002}}
-            \textbf{Custom Operating System}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
     \section{Technologies}
 
-
-
-        
         \begin{onecolentry}
-            \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
+            \textbf{Languages:} C/C++, Python, Java, Javascript, Verilog
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
         \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
+            \textbf{Technologies:} Git, Xilinx Vivado, SQL, VSCode, IntelliJ,  
+Arduino IDE, KiCad, LTSpice 
         \end{onecolentry}
 
+    \section{Projects}
 
-    
+        \begin{twocolentry}{
+            
+            
+        \textit{Feb,24 – Apr,24}}
+            \textbf{RISC – V Custom Assembler \& Simulator | \href{https://github.com/SakshamMishra2023/RISC_V_Assembler-Simulator.git}{github repo}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item A custom RISC V Assembler and Simulator written in C++ to convert RISC-V assembly code
+into machine code (binary instructions) for execution on a RISC-V processor.
+                \item Tech Stack: C++, RISC-V instruction set 
+                \item Team Size: 4
+                \end{highlights} \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            
+            
+        \textit{Oct,24 – Nov,24}}
+            \textbf{Angry Bird Style Video-Game | \href{https://github.com/Sanchit-100/AngryGhosts.git}{github repo}}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed an angry-bird style game using LibGDX library of Java with 3 playable levels.
+Described the in-game mechanisms using structured and behavioral UML diagrams.
+                \item Tech Stack: LibGDX(Java), gradle, Box2D
+                \item Team Size: 2
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            
+            
+        \textit{Feb,24 –Apr,24}}
+            \textbf{SpotSync – Parking Optimization App | \href{https://github.com/TheSlothThatCodes0/SpotSync.git}{github repo}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item An application that optimizes parking space allocation in real time using live camera feeds .
+Self Check-in and Check-out: Calculates parking fee by maintaining record of entry and exit
+time through License plate recognition.
+                \item Tech Stack: Python, React Native, OpenOCR, YOLO Model
+                \item Team Size: 5
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            
+            
+        \textit{Mar,24 – Apr,24}}
+            \textbf{IOT Based RFID card Attendance System| \href{https://github.com/SakshamMishra2023/RFID-based-attendance-system.git}{github repo}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed a smart attendance system leveraging RFID technology and the NodeMCU
+ESP8266 microcontroller. This innovative project streamlines the process of attendance
+tracking and enhances accuracy and efficiency.
+                \item Tech Stack: ESP8266 Node-MCU, Arduino IDE, RFID
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            
+            
+        \textit{Mar,25 -Apr,25}}
+            \textbf{Temperature Based Motor Control System | \href{https://github.com/SakshamMishra2023/Temperature-based-Motor-Control.git}{github repo}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed a fully Analog temperature regulation system using diodes, BJTs, and op-amps,
+eliminating microcontroller dependency. Implemented a dual-threshold window comparator
+with to autonomously control heating and cooling, ensuring stable thermal regulation
+through precise Analog signal processing.
+                \item Equipment & Tech: LT Spice (Schematic), BJT, Relay, Op-Amps and Diodes
+                \item Team Size: 3
+            \end{highlights}
+        \end{onecolentry}
+
+        
+
+    \section{Positions of Responsibility}
+
+        \begin{twocolentry}{
+            
+            
+        \textit{Sep,2023 – Present}}
+
+        \begin{highlights}
+                \item \textf{Content Team: E cell } \end{highlights}
+                \end{twocolentry}
+
+
+         \begin{twocolentry}{
+
+        \textit{Sep,24 – Dec,24}}
+            \begin{highlights}
+                \item \textf{ECE Newsletter Editor  } \end{highlights}
+        \end{twocolentry}
+
+        \begin{twocolentry}{
+        \textit{Aug,24 – May,25}}
+            \begin{highlights}
+                \item \textf{Volunteer at Centre for Intelligent Product Development} \end{highlights}
+        \end{twocolentry}
+
+        \begin{twocolentry}{
+        \textit{Jan,24 – Mar,24}}
+            \begin{highlights}
+                \item \textf{Content Team: E-summit 2023 } \end{highlights}
+        \end{twocolentry}
+
+        
+
+    \section{Achievements and Awards}
+
+        \begin{onecolentry}
+            % Add your honors and awards here
+            % Example format:
+            % \textbf{Award Name} - Description or details about the award
+            \begin{highlights}
+                \item \textf{Finalist in Anveshan 3.0 (Intra-College Hackathon) | Position : Team Leader }
+                 \item \textf{Amazon Hack-on Season 5 : Among top 1400 teams out of 10,000+ teams}
+            \end{highlights}
+
+        \end{onecolentry}
+
+    \section{Hobbies and Interests}
+
+        \begin{onecolentry}
+            % Add your hobbies and interests here
+            % Example format:
+            \begin{highlights}
+                \item \textf{Writing Stories, Reading Books, Table Tennis}
+                 \item \textf{Video Games, D\&D}
+            \end{highlights}
+
+        \end{onecolentry}
 
 \end{document}
